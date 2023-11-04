@@ -1,0 +1,134 @@
+/* Header CSS Section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-tint-1);
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.logo {
+    height: 2.2rem;
+}
+
+/* navigation */
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link, .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-grey-5);
+    font-weight: var(--fw-bold);
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover , .main-nav-link:active {
+    color: var(--color-shade-1);
+}
+
+.main-nav-link.active:link, .main-nav-link.active:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: var(--radius-default);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transition: all 0.4s ease-in;
+}
+
+.main-nav-link.active:hover, .main-nav-link.active:active {
+    background-color: var(--color-shade-1);
+}
+
+/* *********** end ***************** */
+
+.section-hero {
+    background-color: var(--color-tint-1);
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.delivered-imgs {
+    display: flex;
+}
+
+.delivered-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid var(--color-white);
+}
+
+.delivered-imgs img:last-child {
+    margin: 0;
+}
+
+.delivered-text {
+    font-size: 1.7rem;
+    font-weight: var(--fw-bold);
+}
+
+.delivered-text  span {
+    color: var(--color-shade-1);
+    font-weight: var(--fw-bold);
+}
+
+/* featured in */
+.section-featured {
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: var(--ls-md);
+    color: var(--color-grey-1);
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
